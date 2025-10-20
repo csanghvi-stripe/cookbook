@@ -10,7 +10,6 @@ This repository contains examples, tutorials, and applications for building with
 - [Deploy to an edge device](#deploy-to-an-edge-device) - Run models on mobile, both Android and iOS.
 - [End-to-end tutorials](#end-2-end-tutorials) - Complete walkthroughs from setup to production.
 - [Examples built by our community](#examples-built-by-our-community) - Working demos you can run and modify
-- [API reference](#api-reference) - Detailed documentation for all features
 
 ## Fine-Tune an LFM2 model
 
@@ -101,18 +100,17 @@ Written for Android (Kotlin) and iOS (Swift), the goal of the Edge SDK is to mak
 
 Complete end-to-end tutorials that take you from setup to deployment.
 
-Coming soon.
+- [Super fast and accurate image classification on edge devices](https://github.com/Paulescu/image-classification-with-local-vlms) ![GitHub Repo stars](https://img.shields.io/github/stars/Paulescu/image-classification-with-local-vlms)
+- [Let's build a Chess game using small and local Large Language Models](https://github.com/Paulescu/chess-game) ![GitHub Repo stars](https://img.shields.io/github/stars/Paulescu/chess-game)
 
 
 ## Examples built by our community
 
 Working applications that demonstrate Liquid models in action.
 
-- [Super fast and accurate image classification on edge devices](https://github.com/Paulescu/image-classification-with-local-vlms) ![GitHub Repo stars](https://img.shields.io/github/stars/Paulescu/image-classification-with-local-vlms)
-- [Let's build a Chess game using small and local Large Language Models](https://github.com/Paulescu/chess-game) ![GitHub Repo stars](https://img.shields.io/github/stars/Paulescu/chess-game)
+- [TranslatorLens: Building An Offline Translation Camera
+](https://github.com/linmx0130/TranslatorLens)![GitHub Repo stars](https://img.shields.io/github/stars/linmx0130/TranslatorLens)
 
-
-## API Reference
 
 <!-- Detailed documentation for working with Liquid models:
 
