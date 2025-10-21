@@ -137,15 +137,12 @@ Working applications that demonstrate Liquid models in action.
 
 ## Contributing
 
-We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+We welcome contributions!
+
+- Open a PR with a link to your project github repo in the `Examples built by our community` section.
+
 
 ## Support
 
-- **Documentation:** [docs.liquid.ai](https://docs.liquid.ai)
-- **Issues:** [GitHub Issues](https://github.com/liquid/liquid-models/issues)
-<!-- - **Discussions:** [GitHub Discussions](https://github.com/liquid/liquid-models/discussions) -->
-- **Discord:** [Join our community](https://discord.gg/liquid)
-
-## License
-
-This repository is licensed under [LICENSE](LICENSE).
+- **Documentation:** [https://leap.liquid.ai/docs](https://leap.liquid.ai/docs)
+- **Discord:** [Join our community 🤗](https://discord.gg/DFU3WQeaYD)
