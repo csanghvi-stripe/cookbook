@@ -98,41 +98,13 @@ Input: "I have high cholesterol and take atorvastatin 20 mg once daily."
 Output: [{"text": "high cholesterol", "category": "MEDICAL_CONDITION"}, {"text": "atorvastatin", "category": "MEDICATION", "dosage": {"text": "20 mg once daily"}}]
 ```
 
-## Systemm prompt
+## System prompts
 
-```
-Return data as a JSON object with the following schema:
+I tried two different ones, you can find in [`prompts.py`](./prompts.py)
 
-The output should be an array of objects. Each object represents an extracted medical entity and must contain:
+- `v1` includes a full JSON schema specification the output.
+- `v2` is inspired by the [example colab](https://colab.research.google.com/drive/1LXvnq-wbPmgLt3D2kcpdaDOg99Z-XSOW?usp=sharing) we provide for the LFM2-350M-Extract model card.
 
-1. "text" (string, required): The extracted medical term, condition name, medication name, or measurement name
-2. "category" (string, required): One of "MEDICAL_CONDITION", "MEDICATION", or "MEASUREMENT"
-3. Additional fields based on category:
-   - If category is "MEDICATION": include "dosage" object with "text" field containing dosage information
-   - If category is "MEASUREMENT": include "value" object with "text" field containing the measurement value and units
-   - If category is "MEDICAL_CONDITION": no additional fields required
-
-Schema structure:
-[
-  {
-    "text": "string",
-    "category": "MEDICAL_CONDITION" | "MEDICATION" | "MEASUREMENT",
-    "dosage": {  // only for MEDICATION
-      "text": "string"
-    },
-    "value": {  // only for MEASUREMENT
-      "text": "string"
-    }
-  }
-]
-
-Examples:
-Input: "I have diabetes and take metformin 500 mg twice a day."
-Output: [{"text": "diabetes", "category": "MEDICAL_CONDITION"}, {"text": "metformin", "category": "MEDICATION", "dosage": {"text": "500 mg twice a day"}}]
-
-Input: "My blood pressure was 120/80."
-Output: [{"text": "blood pressure", "category": "MEASUREMENT", "value": {"text": "120/80"}}]
-```
 
 ## TODOs
 
@@ -140,6 +112,6 @@ Output: [{"text": "blood pressure", "category": "MEASUREMENT", "value": {"text":
     - [x] LFM2-1.2B-Extract
     - [x] LFM2-700M
 - [x] Add structured generation
-- [ ] Evaluate on 50 samples
+- [x] Use the LEAP Workbench to auto-optimize the prompts and evaluate performance on `data/sample.csv`. If not happy with the results, then parameter fine-tune with LoRA.
 - [ ] Generate a training/eval dataset for fine-tuning
 - [ ] Fine-tune
